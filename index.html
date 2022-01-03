@@ -10,35 +10,39 @@
 <h1>Seja Bem vindo ao InstruFinder</h1>
 
 <script src="js/app.js"></script>
+
 <body>
-<div id="main-container">
-    <h1>Faça agora seu cadastro para ter acesso ao sistema!</h1>
-    <form action="register-form">
-        <div class="full-box">
-           <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
-           <label for="email">E-mail</label>
-        </div>
-        <div class="half-box">
-            <input type="text" name="name" id="name" placeholder="Digite seu nome">
-            <label for="name">Nome</label>
-        </div>
-        <div class="half-box">
-            <input type="password" name="password" id="password" placeholder="Digite sua senha">
-            <label for="password">Senha</label>
-        </div>
-        <div class="half-box">
-            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme sua senha">
-            <label for="confirm-password">Confirmação de senha</label>
-        </div>
-        <div class="full-box">
-            <input type="checkbox" name="agreement" id="agreement">
-            <label for="agreement">Eu li e aceito os <a href="#">termos de uso</a></label>
-        </div>
-        <div class="full-box">
-            <input type="submit" value="Registrar" id="btn-submit">
-        </div>
-    </form>
-</div>
-<h2></h2>    
+    <div id="main-container">
+        <h1>Faça agora seu cadastro para ter acesso ao sistema!</h1>
+        <form action="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="half-box">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="half-box">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <div class="half-box">
+                <label for="confirm-password">Confirmação de senha</label>
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme sua senha">
+            </div>
+            <div class="full-box">
+                <input type="checkbox" name="agreement" id="agreement">
+                <label for="agreement">Eu li e aceito os <a href="#">termos de uso</a></label>
+            </div>
+            <div class="full-box">
+                <input type="submit" value="Registrar" id="btn-submit">
+            </div>
+        </form>
+    </div>
+    <p class="error-validation template"></p>
+
+    <h2></h2>
 </body>
+
 </html>
