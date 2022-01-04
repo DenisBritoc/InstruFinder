@@ -24,12 +24,23 @@ class Validator {
             for(let i=0; this.validations.length > i; i++) {
                 //verifica se a validação atual existe no input
                 if(input.getAttribute(this.validations[i]) != null) {
-                    console.log(input.getAttribute(this.validations[i]));
+                    //limpar a string -> metodo
+                    let method = this.validations[i].replace('data-', '').replace('-', '');
 
-                    console.log("achou validação");
+                    //valor do input
+                    let value = input.getAttribute(this.validations[i]);
+
+                    //invocação deo metodo
+                    this[method](input, value);
+
                 }
             }
         }, this);
+    }
+    //verifica se o input tem um numero min de caracteres
+    minlenght(input, minValue) {
+        console.log(input);
+        console.log(minValue);
     }
 }
 
